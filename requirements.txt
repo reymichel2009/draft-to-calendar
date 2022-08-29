@@ -1,0 +1,7 @@
+discord.py
+pyrogram
+tgcrypto
+aiohttp
+yarl
+bs4
+aiohttp_socks
