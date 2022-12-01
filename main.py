@@ -152,17 +152,17 @@ async def message_handler(client: Client, message: Message):
         return
 
     # Comprobar que el usuario esté en el grupo o está autorizado
-    if not url_list.get(uid):
+   # if not url_list.get(uid):
         # url_list[uid] = {"proxy": "", "urls": []}
         # return
-        group_members = client.get_chat_members(bot_admin_group)
-        auth = False
-        async for member in group_members:
-            if uid == member.user.id:
-                auth = True
-                url_list[uid] = {"proxy": "", "urls": []}
-        if auth == False:
-            return
+        #group_members = client.get_chat_members(bot_admin_group)
+        #auth = False
+        #async for member in group_members:
+         #   if uid == member.user.id:
+          #      auth = True
+           #     url_list[uid] = {"proxy": "", "urls": []}
+        #if auth == False:
+         #   return
 
     # Poner Proxy
     if msg.lower().startswith("/proxy"):
